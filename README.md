@@ -1,31 +1,36 @@
-# Adonis fullstack application
+# Desplegar AdonisJS en Render ⛅
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+* Clonar o Descargar el [repositorio](https://github.com/adonisjs/adonis-fullstack-app) 👥
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+* Crear un repositorio de GitHub con los documentos 🌿
 
-## Setup
+* Crear Servicio Web 🌐
 
-Use the adonis command to install the blueprint
+* Establecer comando de construcción 🚧 `npm install`
 
-```bash
-adonis new yardstick
+* Establecer comando de trabajo 💥 `node server.js`
+
+* Crear variables de ambiente 🔐
+```
+APP_KEY=...
+ENV_SILENT=true
 ```
 
-or manually clone the repo and then run `npm install`.
+## Agregar BD
+* Crear la BD
+* Agregar la dependencia
+``` javascript
+"dependencies": {
+    "pg": "^8.0.2"
+}
+```
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+*  Agregar variables de ambiente
+```
+DB_CONNECTION=pg
+DB_HOST=dpg-chd0nh2k728tp9dgg480-a
+DB_PORT=5432
+DB_USER=littleoctopusdatabase_user
+DB_PASSWORD=zGuxC4HraGnhJJrqr6jDywearDOP5u4z
+DB_DATABASE=littleoctopusdatabase
 ```
