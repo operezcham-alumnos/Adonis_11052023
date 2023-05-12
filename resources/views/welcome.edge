@@ -7,7 +7,7 @@
   <body>
     <h1>Hola</h1>
   @loggedIn
-    <h1>Hola, {{ auth.user }} ✋</h1>
+    <h1>Hola, {{ auth.user.username }} ✋</h1>
   @else
     <p>No haz iniciado sesión 💔</p>
   @endloggedIn
