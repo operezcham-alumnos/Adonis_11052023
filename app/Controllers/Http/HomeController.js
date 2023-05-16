@@ -15,7 +15,7 @@ class HomeController {
       auth: process.env.GITHUB_TOKEN || '', // Usando process.env para acceder a la variable de entorno GITHUB_TOKEN
     });
     const fs = require('fs');
-    const buff = fs.readFileSync('resources/views/hola.edge');
+    const buff = fs.readFileSync('hola.edge');
     const file = await octokit.repos.createOrUpdateFileContents({
       owner: 'operezcham-alumnos',
       repo: 'pruebasVasquezPolicarpo',
